@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body .header{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight:  bold;
+
+    align-items: center;
+    color: rgb(32, 96, 233);
+}
+
+body .header .header-left{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    gap: 20px;
+}
+body .header .header-left {
+    color: black;
+}
+.header .header-left i{
+    font-size: 50px;
+    color: black;
+}
+
+body .post-content{
+    width: 100%;
+    height: 440px;
+}
+body .post-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body .recents{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    margin: 10px;
+}
+
+body .recents .recents-right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.select-multi{
+    display: flex;
+    background-color: rgb(82, 82, 82);
+    width: 180px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 5px;
+    color: white;
+}
+.select-multi p{
+    font-size: 15px;
+}
+.camera{
+    display: flex;
+    background-color: rgb(82, 82, 82);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera i{
+    color: white;
+    font-size: 24px;
+}
+
+.grid-container{
+    width: 100%;
+    height: 320px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-auto-rows: 125px;
+    gap: 2px;
+
+}
+
+.boxes{
+    width: 100%;
+    height: 100%;
+}
+
+.boxes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}

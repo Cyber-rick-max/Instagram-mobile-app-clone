@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+}
+body .header p{
+    font-size:  20px;
+    font-weight: 800;
+}
+
+.header .header-icons{
+    display: flex;
+    gap: 25px;
+}
+
+.header .header-icons i{
+    font-size: 24px;
+}
+
+.body{
+    overflow-y: scroll;
+    height: 200px;
+}
+
+body .profile-details{
+    display: flex;
+    height: 100px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-details .profile-details-img{
+    height:90px ;
+    width: 90px;
+}
+.profile-details .profile-details-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profile-details .profile-details-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-details .profile-details-post h4{
+    font-weight: 800;
+}
+
+body .profile-username{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 20px;
+}
+
+body .buttons{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    margin: 10px ;
+
+    gap: 10px;
+}
+
+.buttons .profile-edit{
+    display: flex;
+    background-color: rgba(109, 109, 109, 0.404);
+    height: 40px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.buttons .profile-share{
+    display: flex;
+    background-color: rgba(109, 109, 109, 0.404);
+    height: 40px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+body .post-section{
+    width: 100%;
+    height: 850px;
+    /* background-color:#00cfff; */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.story-main-cont{
+    display: flex;
+    overflow-x: scroll;
+    height: 110px;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.story-main-cont .story{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.story-main-cont .story .circle{
+   width: 65px;
+   height: 65px;
+   border-radius: 100%;
+   margin: 5px 0 5px 0;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid rgb(255, 255, 255);
+}
+.story-main-cont .story p{
+    font-size: 14px;
+}
+.story-main-cont .story .circle::after{
+   width: 110%;
+   height: 110%;
+   border-radius: 100%;
+   content: "";
+   display: block;
+   position: absolute;
+   z-index: -1;
+   background-color: rgba(116, 116, 116, 0.671);
+
+}
+.story-main-cont .story .circle img{
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+}
+
+.story-main-cont .first{
+    margin-left: 10px;
+}
+.story-main-cont .last{
+    margin-right: 10px;
+}
+
+.story-main-cont .story .seen::after{
+    width: 110%;
+    height: 110%;
+    border-radius: 100%;
+    content: "";
+    background:rgb(146, 146, 146)
+}
+
+body .more-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px 10px;
+}
+body .more-buttons i{
+    font-size: 28px;
+}
+
+.grid-container{
+    width: 100%;
+    height: 325px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-auto-rows: 125px;
+    gap: 2px;
+
+}
+
+.boxes{
+    width: 100%;
+    height: 100%;
+}
+
+.boxes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 55px;
+    border-top: 1px solid black;
+    align-items: center;
+    margin-top: auto;
+}
+.footer .footer-img{ 
+    width: 36px;
+    height: 36px;
+}
+.footer .footer-img a{ 
+    width: 36px;
+    height: 36px;
+    position: absolute;
+}
+.footer .footer-img a img{
+    width: 80%;
+    height: 80%;
+}

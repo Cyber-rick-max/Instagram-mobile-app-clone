@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+p{
+    color: white;
+}
+.icons .header-icons{
+    padding: 20px;
+    width: 100%;
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-icons h2{
+    font-size: 30px;
+    color: white;
+}
+.header-icons i{
+    font-size: 24px;
+    color: white;
+}
+
+.icons .reel-icons{
+    transform: translateY(-50px);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-icons{
+    display: flex;
+    transform: translateY(160px);
+}
+.left-icons .top-username{
+    display: flex;
+}
+.top-profile{
+    width: 30px;
+    height: 30px;
+}
+.top-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.bi-patch-check-fill{
+    color: rgb(56, 156, 250);
+}
+
+.right-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-icons .right-icon-img{
+    width: 30px;
+    height: 30px;
+}
+.right-icons i{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 55px;
+    border-top: 1px solid black;
+    align-items: center;
+    margin-top: auto;
+}
+.footer .footer-img{ 
+    width: 36px;
+    height: 36px;
+}
+.footer .footer-img a{ 
+    width: 36px;
+    height: 36px;
+    position: absolute;
+}
+.footer .footer-img a img{
+    width: 80%;
+    height: 80%;
+}
+
+body .reel-container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.reel-container .reels{
+    width: 100%;
+    height: 100%; 
+}
+.reel-container .reels img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
