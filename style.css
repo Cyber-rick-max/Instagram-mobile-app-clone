@@ -112,6 +112,15 @@ form{
     color: #0095F6;
 }
 
+.disclaimer{
+    background-color: #fff3cd;
+    color: #856404;
+    margin-top: 180px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffeeba;
+}
+
 .footer{
     width: 100%;
     display: flex;
